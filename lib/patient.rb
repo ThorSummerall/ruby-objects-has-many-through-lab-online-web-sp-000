@@ -27,4 +27,5 @@ class Patient
       appointments.doctor
     end
   end
+
 end
