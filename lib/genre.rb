@@ -15,8 +15,11 @@ class Genre
   def songs
     list_of_songs = []
     Song.all.map do |song|
-      puts "collecting song names"
-      song.name << list_of_songs
+      if song.name == self 
+        song.name << list_of_songs 
+      else 
+        nil 
+      end
     end
     list_of_songs
   end
