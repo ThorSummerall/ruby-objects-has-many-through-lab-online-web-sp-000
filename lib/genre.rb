@@ -12,15 +12,9 @@ class Genre
     @@all
   end
 
-  def songs
-    Song.all.select do |song|
-      song.name == self
-    end
-  end
-
-  def artists
-    songs.collect do |song|
-      song.artist
+  def songs 
+    Song.collect.select do |song|
+      song.name == self  
     end
   end
 end
