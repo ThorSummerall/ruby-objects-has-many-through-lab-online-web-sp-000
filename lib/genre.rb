@@ -14,6 +14,7 @@ class Genre
 
   def songs
     Song.all.map do |song|
+      puts "collecting song names"
       song.name == @name
     end
   end
