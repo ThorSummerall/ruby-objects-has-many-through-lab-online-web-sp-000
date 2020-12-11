@@ -13,8 +13,6 @@ class Genre
   end
 
   def songs
-    Song.all.select do |song|
-      song.name == self
-    end
+    return Song.all.select do {|song| song.name == self }
   end
 end
