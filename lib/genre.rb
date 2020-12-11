@@ -12,9 +12,9 @@ class Genre
     @@all
   end
 
-  def songs 
+  def songs
     Song.collect.select do |song|
-      song.name == self  
+      song.name == self
     end
   end
 end
