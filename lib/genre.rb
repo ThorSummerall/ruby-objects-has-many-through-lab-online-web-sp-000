@@ -13,7 +13,7 @@ class Genre
   end
 
   def songs
-    Song.collect.select do |song|
+    Song.map.select do |song|
       song.name == self
     end
   end
