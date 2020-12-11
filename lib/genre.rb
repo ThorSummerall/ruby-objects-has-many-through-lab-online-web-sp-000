@@ -14,7 +14,7 @@ class Genre
 
   def songs
     Song.all.map do |song|
-      song.name == self
+      song.name == @name
     end
   end
 end
