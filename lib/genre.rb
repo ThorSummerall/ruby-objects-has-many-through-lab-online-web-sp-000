@@ -13,10 +13,8 @@ class Genre
   end
 
   def songs
-    list_of_songs = []
     Song.all.select do |song|
       song.name == self
     end
-    list_of_songs
   end
 end
