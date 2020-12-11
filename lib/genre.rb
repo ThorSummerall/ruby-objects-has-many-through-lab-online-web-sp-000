@@ -13,9 +13,11 @@ class Genre
   end
 
   def songs
+    list_of_songs = []
     Song.all.map do |song|
       puts "collecting song names"
-      song.name == @name
+      song.name << list_of_songs
     end
+    list_of_songs
   end
 end
